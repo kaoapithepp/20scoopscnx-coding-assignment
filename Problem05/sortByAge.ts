@@ -1,11 +1,16 @@
-const INPUT_ARRAY = require('../CHALLENGE_A');
+import INPUT_ARRAY from '../CHALLENGE_A';
+
+type UserEntity = {
+    name: string,
+    age: number
+}[];
 
 /*
     In use of QuickSort algorithm
     Worst case time complexity: O(n^2)
     Wrote in Functional Programming style
 */
-function sortByAge(input) {
+function sortByAge(input: UserEntity) {
     // Base case for handling recursive
     if(input.length <= 1) return input;
 

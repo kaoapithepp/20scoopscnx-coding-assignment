@@ -1,4 +1,4 @@
-module.exports = input = [
+const input = [
     {
      name: 'John',
      age: 60
@@ -20,3 +20,5 @@ module.exports = input = [
      age: 56
     }
 ]
+
+export default input;

@@ -1,11 +1,10 @@
-const INPUT_ARRAY = require('../INPUT');
-
+import INPUT_ARRAY from '../INPUT';
 /*
     In use of QuickSort algorithm
     Worst case time complexity: O(n^2)
     Wrote in Functional Programming style
 */
-function sortItems(input) {
+function sortItems(input: number[]) {
     // Base case for handling recursive
     if(input.length <= 1) return input;
 
