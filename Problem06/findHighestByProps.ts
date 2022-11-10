@@ -1,11 +1,13 @@
 import INPUT_ARRAY from '../CHALLENGE_B';
 
-type UserEntity = {
-    name: string,
-    age: number,
-    salary: number,
+interface UserProps {
+    name: string;
+    age: number;
+    salary: number;
     children: number
-}[];
+};
+
+type UserEntity = UserProps[];
 
 const PROPERTY = "children";
 

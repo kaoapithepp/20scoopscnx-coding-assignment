@@ -1,9 +1,11 @@
 import INPUT_ARRAY from '../CHALLENGE_A';
 
-type UserEntity = {
-    name: string,
-    age: number
-}[];
+interface UserProps {
+    name: string;
+    age: number;
+};
+
+type UserEntity = UserProps[];
 
 /*
     In use of QuickSort algorithm
